@@ -8,3 +8,4 @@ Route::get('/', function () {
 });
 
 Route::get('admin/dashboard', 'App\Http\Controllers\Admin\AdminDashboardController@adminDashboard');
+Route::get('admin/login', 'App\Http\Controllers\Admin\AdminLoginController@loginForm');
