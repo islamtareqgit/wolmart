@@ -2,10 +2,9 @@
 <html lang="en">
 
 
-
+<!-- Mirrored from codervent.com/synadmin/demo/vertical/authentication-signin.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 27 Jun 2021 11:05:17 GMT -->
 <head>
 	<!-- Required meta tags -->
-
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -30,6 +29,12 @@
 	<link href="{{ asset('assets/css/app.css')}}" rel="stylesheet">
 	<link href="{{ asset('assets/css/icons.css')}}" rel="stylesheet">
 
+	<!-- Theme Style CSS -->
+	<link rel="stylesheet" href="{{ asset('assets/css/dark-theme.css')}}" />
+	<link rel="stylesheet" href="{{ asset('assets/css/semi-dark.css')}}" />
+	<link rel="stylesheet" href="{{ asset('assets/css/header-colors.css')}}" />
+
+	<title>Wolmart Login Panel</title>
 </head>
 
 <body>
@@ -48,16 +53,9 @@
 								<div class="p-4 rounded">
 									<div class="text-center">
 										<h3 class="">Sign in</h3>
-										<p>Don't have an account yet? <a href="authentication-signup.html">Sign up here</a>
-										</p>
+										
 									</div>
-									<div class="d-grid">
-										<a class="btn my-4 shadow-sm btn-white" href="javascript:;"> <span class="d-flex justify-content-center align-items-center">
-                          <img class="me-2" src="assets/images/icons/search.svg" width="16" alt="Image Description">
-                          <span>Sign in with Google</span>
-											</span>
-										</a> <a href="javascript:;" class="btn btn-facebook"><i class="bx bxl-facebook"></i>Sign in with Facebook</a>
-									</div>
+									
 									<div class="login-separater text-center mb-4"> <span>OR SIGN IN WITH EMAIL</span>
 										<hr/>
 									</div>
@@ -109,10 +107,7 @@
 	<script src="{{ asset('assets/plugins/simplebar/js/simplebar.min.js')}}"></script>
 	<script src="{{ asset('assets/plugins/metismenu/js/metisMenu.min.js')}}"></script>
 	<script src="{{ asset('assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js')}}"></script>
-	<script src="{{ asset('assets/plugins/apexcharts-bundle/js/apexcharts.min.js')}}"></script>
-	<script src="{{ asset('assets/js/index5.js')}}"></script>
-
-
+	
 	<!--Password show & hide js -->
 	<script>
 		$(document).ready(function () {
@@ -135,5 +130,5 @@
 </body>
 
 
-
+<!-- Mirrored from codervent.com/synadmin/demo/vertical/authentication-signin.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 27 Jun 2021 11:05:18 GMT -->
 </html>
