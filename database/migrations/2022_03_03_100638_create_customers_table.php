@@ -15,6 +15,12 @@ return new class extends Migration
     {
         Schema::create('customers', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('email')-> unique();
+            $table->string('password');
+            $table->string('cell')-> unique();
+            $table->boolean('status')-> default(true);
+            $table->boolean('trash')-> default(false);
             $table->timestamps();
         });
     }
