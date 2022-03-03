@@ -4,6 +4,7 @@ namespace App\Http\Middleware\Admin;
 
 use Closure;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class AdminDashboard
 {
@@ -19,7 +20,13 @@ class AdminDashboard
 
     {
         
+        if(Auth::guard('admin')-> check()){
+
+            return $next($request);
+        }else{
+
+           return redirect('admin/login');
+        }
         
-        return $next($request);
     }
 }
