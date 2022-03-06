@@ -14,7 +14,7 @@
     <meta name="author" content="D-THEMES">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="{{ asset('assets/images/icons/favicon.png')}}">
+    <link rel="icon" type="image/png" href="{{ asset('dashboard/assets/images/icons/favicon.png')}}">
 
     <!-- WebFont.js -->
     <script>
@@ -29,24 +29,24 @@
         } )( document );
     </script>
 
-    <link rel="preload" href="{{ asset('assets/vendor/fontawesome-free/webfonts/fa-regular-400.woff2')}}" as="font" type="font/woff2"
+    <link rel="preload" href="{{ asset('dashboard/assets/vendor/fontawesome-free/webfonts/fa-regular-400.woff2')}}" as="font" type="font/woff2"
         crossorigin="anonymous">
-    <link rel="preload" href="{{ asset('assets/vendor/fontawesome-free/webfonts/fa-solid-900.woff2')}}" as="font" type="font/woff2"
+    <link rel="preload" href="{{ asset('dashboard/assets/vendor/fontawesome-free/webfonts/fa-solid-900.woff2')}}" as="font" type="font/woff2"
         crossorigin="anonymous">
-    <link rel="preload" href="{{ asset('assets/vendor/fontawesome-free/webfonts/fa-brands-400.woff2')}}" as="font" type="font/woff2"
+    <link rel="preload" href="{{ asset('dashboard/assets/vendor/fontawesome-free/webfonts/fa-brands-400.woff2')}}" as="font" type="font/woff2"
             crossorigin="anonymous">
 
-    <link rel="preload" href="{{ asset('assets/fonts/wolmart87d5.woff?png09e')}}" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="{{ asset('dashboard/assets/fonts/wolmart87d5.woff?png09e')}}" as="font" type="font/woff" crossorigin="anonymous">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendor/fontawesome-free/css/all.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('dashboard/assets/vendor/fontawesome-free/css/all.min.css')}}">
     <link rel="stylesheet" href="{{ asset('assets/vendor/swiper/swiper-bundle.min.css')}}">
 
     <!-- Plugin CSS -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendor/magnific-popup/magnific-popup.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('dashboard/assets/vendor/magnific-popup/magnific-popup.min.css')}}">
 
     <!-- Default CSS -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/style.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('dashboard/assets/css/style.min.css')}}">
 </head>
 
 <body class="my-account">
@@ -69,16 +69,16 @@
                         <!-- End of DropDown Menu -->
 
                         <div class="dropdown">
-                            <a href="#language"><img src="{{ asset('assets/images/flags/eng.png')}}" alt="ENG Flag" width="14"
+                            <a href="#language"><img src="{{ asset('dashboard/assets/images/flags/eng.png')}}" alt="ENG Flag" width="14"
                                     height="8" class="dropdown-image" /> ENG</a>
                             <div class="dropdown-box">
                                 <a href="#ENG">
-                                    <img src="{{ asset('assets/images/flags/eng.png')}}" alt="ENG Flag" width="14" height="8"
+                                    <img src="{{ asset('dashboard/assets/images/flags/eng.png')}}" alt="ENG Flag" width="14" height="8"
                                         class="dropdown-image" />
                                     ENG
                                 </a>
                                 <a href="#FRA">
-                                    <img src="{{ asset('assets/images/flags/fra.png')}}" alt="FRA Flag" width="14" height="8"
+                                    <img src="{{ asset('dashboard/assets/images/flags/fra.png')}}" alt="FRA Flag" width="14" height="8"
                                         class="dropdown-image" />
                                     FRA
                                 </a>
@@ -90,11 +90,11 @@
                         <a href="contact-us.html" class="d-lg-show">Contact Us</a>
                         <a href="my-account.html" class="d-lg-show">My Account</a>
 
-                        <a href="{{ asset('assets/ajax/login.html')}}" class="d-lg-show login sign-in"><i
+                        <a href="{{ asset('dashboard/assets/ajax/login.html')}}" class="d-lg-show login sign-in"><i
 
                                 class="w-icon-account"></i>Sign In</a>
                         <span class="delimiter d-lg-show">/</span>
-                        <a href="{{ asset('assets/ajax/login.html')}}" class="ml-0 d-lg-show login register">Register</a>
+                        <a href="{{ asset('dashboard/assets/ajax/login.html')}}" class="ml-0 d-lg-show login register">Register</a>
                     </div>
                 </div>
             </div>
@@ -106,7 +106,7 @@
                         <a href="#" class="mobile-menu-toggle  w-icon-hamburger" aria-label="menu-toggle">
                         </a>
                         <a href="demo1.html" class="logo ml-lg-0">
-                            <img src="{{ asset('assets/images/logo.png')}}" alt="logo" width="144" height="45" />
+                            <img src="{{ asset('dashboard/assets/images/logo.png')}}" alt="logo" width="144" height="45" />
                         </a>
                         <form method="get" action="#" class="header-search hs-expanded hs-round d-none d-md-flex input-wrapper">
                             <div class="select-box">
@@ -173,7 +173,7 @@
                                         </div>
                                         <figure class="product-media">
                                             <a href="product-default.html">
-                                                <img src="{{ asset('assets/images/cart/product-1.jpg')}}" alt="product" height="84"
+                                                <img src="{{ asset('dashboard/assets/images/cart/product-1.jpg')}}" alt="product" height="84"
                                                     width="94" />
                                             </a>
                                         </figure>
@@ -194,7 +194,7 @@
                                         </div>
                                         <figure class="product-media">
                                             <a href="product-default.html">
-                                                <img src="{{ asset('assets/images/cart/product-2.jpg')}}" alt="product" width="84"
+                                                <img src="{{ asset('dashboard/assets/images/cart/product-2.jpg')}}" alt="product" width="84"
                                                     height="94" />
                                             </a>
                                         </figure>
@@ -2114,10 +2114,10 @@
     <!-- End of Mobile Menu -->
 
     <!-- Plugin JS File -->
-    <script src="{{ asset('assets/vendor/jquery/jquery.min.js')}}"></script>
-    <script src="{{ asset('assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
-    <script src="{{ asset('assets/vendor/magnific-popup/jquery.magnific-popup.min.js')}}"></script>
-    <script src="{{ asset('assets/js/main.min.js')}}"></script>
+    <script src="{{ asset('dashboard/assets/vendor/jquery/jquery.min.js')}}"></script>
+    <script src="{{ asset('dashboard/assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
+    <script src="{{ asset('dashboard/assets/vendor/magnific-popup/jquery.magnific-popup.min.js')}}"></script>
+    <script src="{{ asset('dashboard/assets/js/main.min.js')}}"></script>
 </body>
 
 

@@ -14,7 +14,7 @@
     <meta name="author" content="D-THEMES">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/images/icons/favicon.png">
+    <link rel="icon" type="image/png" href="{{ asset('dashboard/assets/images/icons/favicon.png')}}">
 
     <!-- WebFont.js -->
     <script>
@@ -29,23 +29,25 @@
         } )( document );
     </script>
 
-    <link rel="preload" href="assets/vendor/fontawesome-free/webfonts/fa-regular-400.woff2" as="font" type="font/woff2"
+    <link rel="preload" href="{{ asset('dashboard/assets/vendor/fontawesome-free/webfonts/fa-regular-400.woff2')}}" as="font" type="font/woff2"
         crossorigin="anonymous">
-    <link rel="preload" href="assets/vendor/fontawesome-free/webfonts/fa-solid-900.woff2" as="font" type="font/woff2"
+    <link rel="preload" href="{{ asset('dashboard/assets/vendor/fontawesome-free/webfonts/fa-solid-900.woff2')}}" as="font" type="font/woff2"
         crossorigin="anonymous">
-    <link rel="preload" href="assets/vendor/fontawesome-free/webfonts/fa-brands-400.woff2" as="font" type="font/woff2"
+
+    <link rel="preload" href="{{ asset('dashboard/assets/vendor/fontawesome-free/webfonts/fa-brands-400.woff2')}}" as="font" type="font/woff2"
             crossorigin="anonymous">
-    <link rel="preload" href="assets/fonts/wolmart87d5.woff?png09e" as="font" type="font/woff" crossorigin="anonymous">
+
+    <link rel="preload" href="{{ asset('dashboard/assets/fonts/wolmart87d5.woff?png09e')}}" as="font" type="font/woff" crossorigin="anonymous">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/vendor/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('dashboard/assets/vendor/fontawesome-free/css/all.min.css')}}">
     <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
 
     <!-- Plugin CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/vendor/magnific-popup/magnific-popup.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('dashboard/assets/vendor/magnific-popup/magnific-popup.min.css')}}">
 
     <!-- Default CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('dashboard/assets/css/style.min.css')}}">
 </head>
 
 <body>
@@ -68,16 +70,16 @@
                         <!-- End of DropDown Menu -->
 
                         <div class="dropdown">
-                            <a href="#language"><img src="assets/images/flags/eng.png" alt="ENG Flag" width="14"
+                            <a href="#language"><img src="{{ asset('dashboard/assets/images/flags/eng.png')}}" alt="ENG Flag" width="14"
                                     height="8" class="dropdown-image" /> ENG</a>
                             <div class="dropdown-box">
                                 <a href="#ENG">
-                                    <img src="assets/images/flags/eng.png" alt="ENG Flag" width="14" height="8"
+                                    <img src="{{ asset('dashboard/assets/images/flags/eng.png')}}" alt="ENG Flag" width="14" height="8"
                                         class="dropdown-image" />
                                     ENG
                                 </a>
                                 <a href="#FRA">
-                                    <img src="assets/images/flags/fra.png" alt="FRA Flag" width="14" height="8"
+                                    <img src="{{ asset('dashboard/assets/images/flags/fra.png')}}" alt="FRA Flag" width="14" height="8"
                                         class="dropdown-image" />
                                     FRA
                                 </a>
@@ -170,7 +172,7 @@
                                         </div>
                                         <figure class="product-media">
                                             <a href="product-default.html">
-                                                <img src="assets/images/cart/product-1.jpg" alt="product" height="84"
+                                                <img src="{{ asset('dashboard/assets/images/cart/product-1.jpg')}}" alt="product" height="84"
                                                     width="94" />
                                             </a>
                                         </figure>
@@ -191,7 +193,7 @@
                                         </div>
                                         <figure class="product-media">
                                             <a href="product-default.html">
-                                                <img src="assets/images/cart/product-2.jpg" alt="product" width="84"
+                                                <img src="{{ asset('dashboard/assets/images/cart/product-2.jpg')}}" alt="product" width="84"
                                                     height="94" />
                                             </a>
                                         </figure>
@@ -1661,9 +1663,9 @@
     <!-- End of Mobile Menu -->
 
     <!-- Plugin JS File -->
-    <script src="assets/vendor/jquery/jquery.min.js"></script>
-    <script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/main.min.js"></script>
+    <script src="{{ asset('dashboard/assets/vendor/jquery/jquery.min.js')}}"></script>
+    <script src="{{ asset('dashboard/assets/vendor/magnific-popup/jquery.magnific-popup.min.js')}}"></script>
+    <script src="{{ asset('dashboard/assets/js/main.min.js')}}"></script>
 </body>
 
 <!-- Mirrored from portotheme.com/html/wolmart/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 18 Jan 2022 07:33:02 GMT -->
