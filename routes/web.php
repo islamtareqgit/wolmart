@@ -9,5 +9,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('admin/dashboard', [AdminDashboardController::class, 'adminDashboard'])-> middleware('admin');
-Route::get('admin/login', [AdminLoginController::class, 'loginForm']);
+Route::get('admin/dashboard', [AdminDashboardController::class, 'adminDashboard'])-> middleware('admin')->name('admin.dashboard');
+Route::get('admin/login', [AdminLoginController::class, 'loginForm'])-> name('admin.login.form');
+Route::post('admin/login', [AdminLoginController::class, 'AdminLoginSystem'])-> name('admin.login');
