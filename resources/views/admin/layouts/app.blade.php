@@ -44,7 +44,7 @@
 		<div class="sidebar-wrapper" data-simplebar="true">
 			<div class="sidebar-header">
 				<div>
-					<img src="assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
+					<img src="{{ asset('assets/images/logo-icon.png')}}" class="logo-icon" alt="logo icon">
 				</div>
 				<div>
 					<h4 class="logo-text">Synadmin</h4>
@@ -54,6 +54,13 @@
 			</div>
 			<!--navigation-->
 			<ul class="metismenu" id="menu">
+				<li>
+					<a href="widgets.html">
+						<div class="parent-icon"><i class='bx bx-briefcase-alt-2'></i>
+						</div>
+						<div class="menu-title">Dashboard</div>
+					</a>
+				</li>
 				<li>
 					<a href="javascript:;" class="has-arrow">
 						<div class="parent-icon"><i class='bx bx-home'></i>
@@ -96,16 +103,10 @@
 						</li>
 					</ul>
 				</li>
-				<li class="menu-label">UI Elements</li>
+				
+				
 				<li>
-					<a href="widgets.html">
-						<div class="parent-icon"><i class='bx bx-briefcase-alt-2'></i>
-						</div>
-						<div class="menu-title">Widgets</div>
-					</a>
-				</li>
-				<li>
-					<a href="javascript:;" class="has-arrow">
+					{{--<a href="javascript:;" class="has-arrow">
 						<div class="parent-icon"><i class='bx bx-cart-alt' ></i>
 						</div>
 						<div class="menu-title">eCommerce</div>
@@ -366,7 +367,7 @@
 						</div>
 						<div class="menu-title">Support</div>
 					</a>
-				</li>
+				</li>--}}
 			</ul>
 			<!--end navigation-->
 		</div>
@@ -578,7 +579,7 @@
 										<a class="dropdown-item" href="javascript:;">
 											<div class="d-flex align-items-center">
 												<div class="user-online">
-													<img src="assets/images/avatars/avatar-1.png" class="msg-avatar" alt="user avatar">
+													<img src="{{ asset('assets/images/avatars/avatar-1.png')}}" class="msg-avatar" alt="user avatar">
 												</div>
 												<div class="flex-grow-1">
 													<h6 class="msg-name">Daisy Anderson <span class="msg-time float-end">5 sec
@@ -590,7 +591,7 @@
 										<a class="dropdown-item" href="javascript:;">
 											<div class="d-flex align-items-center">
 												<div class="user-online">
-													<img src="assets/images/avatars/avatar-2.png" class="msg-avatar" alt="user avatar">
+													<img src="{{ asset('assets/images/avatars/avatar-2.png')}}" class="msg-avatar" alt="user avatar">
 												</div>
 												<div class="flex-grow-1">
 													<h6 class="msg-name">Althea Cabardo <span class="msg-time float-end">14
@@ -602,7 +603,7 @@
 										<a class="dropdown-item" href="javascript:;">
 											<div class="d-flex align-items-center">
 												<div class="user-online">
-													<img src="assets/images/avatars/avatar-3.png" class="msg-avatar" alt="user avatar">
+													<img src="{{ asset('assets/images/avatars/avatar-3.png')}}" class="msg-avatar" alt="user avatar">
 												</div>
 												<div class="flex-grow-1">
 													<h6 class="msg-name">Oscar Garner <span class="msg-time float-end">8 min
@@ -614,7 +615,7 @@
 										<a class="dropdown-item" href="javascript:;">
 											<div class="d-flex align-items-center">
 												<div class="user-online">
-													<img src="assets/images/avatars/avatar-4.png" class="msg-avatar" alt="user avatar">
+													<img src="{{ asset('assets/images/avatars/avatar-4.png')}}" class="msg-avatar" alt="user avatar">
 												</div>
 												<div class="flex-grow-1">
 													<h6 class="msg-name">Katherine Pechon <span class="msg-time float-end">15
@@ -626,7 +627,7 @@
 										<a class="dropdown-item" href="javascript:;">
 											<div class="d-flex align-items-center">
 												<div class="user-online">
-													<img src="assets/images/avatars/avatar-5.png" class="msg-avatar" alt="user avatar">
+													<img src="{{ asset('assets/images/avatars/avatar-5.png')}}" class="msg-avatar" alt="user avatar">
 												</div>
 												<div class="flex-grow-1">
 													<h6 class="msg-name">Amelia Doe <span class="msg-time float-end">22 min
@@ -638,7 +639,7 @@
 										<a class="dropdown-item" href="javascript:;">
 											<div class="d-flex align-items-center">
 												<div class="user-online">
-													<img src="assets/images/avatars/avatar-6.png" class="msg-avatar" alt="user avatar">
+													<img src="{{ asset('assets/images/avatars/avatar-6.png')}}" class="msg-avatar" alt="user avatar">
 												</div>
 												<div class="flex-grow-1">
 													<h6 class="msg-name">Cristina Jhons <span class="msg-time float-end">2 hrs
@@ -650,7 +651,7 @@
 										<a class="dropdown-item" href="javascript:;">
 											<div class="d-flex align-items-center">
 												<div class="user-online">
-													<img src="assets/images/avatars/avatar-7.png" class="msg-avatar" alt="user avatar">
+													<img src="{{ asset('assets/images/avatars/avatar-7.png')}}" class="msg-avatar" alt="user avatar">
 												</div>
 												<div class="flex-grow-1">
 													<h6 class="msg-name">James Caviness <span class="msg-time float-end">4 hrs
@@ -662,7 +663,7 @@
 										<a class="dropdown-item" href="javascript:;">
 											<div class="d-flex align-items-center">
 												<div class="user-online">
-													<img src="assets/images/avatars/avatar-8.png" class="msg-avatar" alt="user avatar">
+													<img src="{{ asset('assets/images/avatars/avatar-8.png')}}" class="msg-avatar" alt="user avatar">
 												</div>
 												<div class="flex-grow-1">
 													<h6 class="msg-name">Peter Costanzo <span class="msg-time float-end">6 hrs
@@ -674,7 +675,7 @@
 										<a class="dropdown-item" href="javascript:;">
 											<div class="d-flex align-items-center">
 												<div class="user-online">
-													<img src="assets/images/avatars/avatar-9.png" class="msg-avatar" alt="user avatar">
+													<img src="{{ asset('assets/images/avatars/avatar-9.png')}}" class="msg-avatar" alt="user avatar">
 												</div>
 												<div class="flex-grow-1">
 													<h6 class="msg-name">David Buckley <span class="msg-time float-end">2 hrs
@@ -686,7 +687,7 @@
 										<a class="dropdown-item" href="javascript:;">
 											<div class="d-flex align-items-center">
 												<div class="user-online">
-													<img src="assets/images/avatars/avatar-10.png" class="msg-avatar" alt="user avatar">
+													<img src="{{ asset('assets/images/avatars/avatar-10.png')}}" class="msg-avatar" alt="user avatar">
 												</div>
 												<div class="flex-grow-1">
 													<h6 class="msg-name">Thomas Wheeler <span class="msg-time float-end">2 days
@@ -698,7 +699,7 @@
 										<a class="dropdown-item" href="javascript:;">
 											<div class="d-flex align-items-center">
 												<div class="user-online">
-													<img src="assets/images/avatars/avatar-11.png" class="msg-avatar" alt="user avatar">
+													<img src="{{ asset('assets/images/avatars/avatar-11.png')}}" class="msg-avatar" alt="user avatar">
 												</div>
 												<div class="flex-grow-1">
 													<h6 class="msg-name">Johnny Seitz <span class="msg-time float-end">5 days
@@ -717,10 +718,10 @@
 					</div>
 					<div class="user-box dropdown">
 						<a class="d-flex align-items-center nav-link dropdown-toggle dropdown-toggle-nocaret" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							<img src="assets/images/avatars/avatar-2.png" class="user-img" alt="user avatar">
+							<img src="{{ url('assets/images/avatars/profile_n.jpg')}}" class="user-img" alt="user avatar">
 							<div class="user-info ps-3">
-								<p class="user-name mb-0">Pauline Seitz</p>
-								<p class="designattion mb-0">Web Designer</p>
+								<p class="user-name mb-0">Tareq Islam</p>
+								<p class="designattion mb-0">Web Application Specialist</p>
 							</div>
 						</a>
 						<ul class="dropdown-menu dropdown-menu-end">
