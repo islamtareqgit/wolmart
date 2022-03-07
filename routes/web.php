@@ -1,10 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Admin\AdminDashboardController;
+use App\Http\Controllers\RoleController;
 use App\Http\Controllers\Admin\AdminLoginController;
-use App\Http\Controllers\Customer\CustomerDashboardController;
+use App\Http\Controllers\Admin\AdminDashboardController;
 use App\Http\Controllers\Customer\CustomerLoginController;
+use App\Http\Controllers\Customer\CustomerDashboardController;
 
 
 Route::get('/', function () {
@@ -18,4 +19,9 @@ Route::post('admin/login', [AdminLoginController::class, 'AdminLoginSystem'])-> 
 Route::get('admin/logout', [AdminLoginController::class, 'AdminLogout'])-> name('admin.logout');
 Route::get('customer/dashboard', [CustomerDashboardController::class, 'customerDashboard']);
 Route::get('customer/login', [CustomerLoginController::class, 'loginFormShow']);
+
+// Admin role CRUD
+
+Route::resource('role', RoleController::class);
+
 
