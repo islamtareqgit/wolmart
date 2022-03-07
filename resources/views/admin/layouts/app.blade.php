@@ -55,8 +55,8 @@
 			<!--navigation-->
 			<ul class="metismenu" id="menu">
 				<li>
-					<a href="widgets.html">
-						<div class="parent-icon"><i class='bx bx-briefcase-alt-2'></i>
+					<a href="{{ route('admin.dashboard')}}">
+						<div class="parent-icon"><i class='bx bx-home'></i>
 						</div>
 						<div class="menu-title">Dashboard</div>
 					</a>
@@ -65,46 +65,61 @@
 					<a href="javascript:;" class="has-arrow">
 						<div class="parent-icon"><i class='bx bx-home'></i>
 						</div>
-						<div class="menu-title">Dashboard</div>
+						<div class="menu-title">Post</div>
 					</a>
 					<ul>
-						<li> <a href="index.html"><i class="bx bx-right-arrow-alt"></i>Analytics</a>
+						<li> <a href="index.html"><i class="bx bx-right-arrow-alt"></i>All Posts</a>
 						</li>
-						<li> <a href="index2.html"><i class="bx bx-right-arrow-alt"></i>Sales</a>
+						<li> <a href="index2.html"><i class="bx bx-right-arrow-alt"></i>Category</a>
 						</li>
-						<li> <a href="index3.html"><i class="bx bx-right-arrow-alt"></i>eCommerce</a>
+						<li> <a href="index3.html"><i class="bx bx-right-arrow-alt"></i>Tags</a>
 						</li>
-						<li> <a href="index4.html"><i class="bx bx-right-arrow-alt"></i>Alternate</a>
+						
+	
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;" class="has-arrow">
+						<div class="parent-icon"><i class='bx bx-home'></i>
+						</div>
+						<div class="menu-title">Products</div>
+					</a>
+					<ul>
+						<li> <a href="index.html"><i class="bx bx-right-arrow-alt"></i>All Products</a>
 						</li>
-						<li> <a href="index5.html"><i class="bx bx-right-arrow-alt"></i>Hospitality</a>
+						<li> <a href="index2.html"><i class="bx bx-right-arrow-alt"></i>Category</a>
 						</li>
+						<li> <a href="index3.html"><i class="bx bx-right-arrow-alt"></i>Tags</a>
+						</li>
+						<li> <a href="index3.html"><i class="bx bx-right-arrow-alt"></i>Brand</a>
+						</li>
+	
 					</ul>
 				</li>
 				<li>
 					<a href="javascript:;" class="has-arrow">
 						<div class="parent-icon"><i class='bx bx-spa' ></i>
 						</div>
-						<div class="menu-title">Application</div>
+						<div class="menu-title">Users</div>
 					</a>
 					<ul>
-						<li> <a href="app-emailbox.html"><i class="bx bx-right-arrow-alt"></i>Email</a>
+						<li> <a href="app-emailbox.html"><i class="bx bx-right-arrow-alt"></i>All Users</a>
 						</li>
-						<li> <a href="app-chat-box.html"><i class="bx bx-right-arrow-alt"></i>Chat Box</a>
+						<li> <a href="app-chat-box.html"><i class="bx bx-right-arrow-alt"></i>Role</a>
 						</li>
-						<li> <a href="app-file-manager.html"><i class="bx bx-right-arrow-alt"></i>File Manager</a>
+						<li> <a href="app-file-manager.html"><i class="bx bx-right-arrow-alt"></i>Permission</a>
 						</li>
-						<li> <a href="app-contact-list.html"><i class="bx bx-right-arrow-alt"></i>Contatcs</a>
-						</li>
-						<li> <a href="app-to-do.html"><i class="bx bx-right-arrow-alt"></i>Todo List</a>
-						</li>
-						<li> <a href="app-invoice.html"><i class="bx bx-right-arrow-alt"></i>Invoice</a>
-						</li>
-						<li> <a href="app-fullcalender.html"><i class="bx bx-right-arrow-alt"></i>Calendar</a>
-						</li>
+						
 					</ul>
 				</li>
 				
-				
+				<li>
+					<a href="widgets.html">
+						<div class="parent-icon"><i class='bx bx-briefcase-alt-2'></i>
+						</div>
+						<div class="menu-title">Widgets</div>
+					</a>
+				</li>
 				<li>
 					{{--<a href="javascript:;" class="has-arrow">
 						<div class="parent-icon"><i class='bx bx-cart-alt' ></i>
@@ -729,12 +744,11 @@
 							</li>
 							<li><a class="dropdown-item" href="javascript:;"><i class="bx bx-cog"></i><span>Settings</span></a>
 							</li>
-							<li><a class="dropdown-item" href="javascript:;"><i class='bx bx-home-circle'></i><span>Dashboard</span></a>
+							<li><a class="dropdown-item" href="javascript:;"><i class="bx bx-cog"></i><span>Password Change</span></a>
 							</li>
-							<li><a class="dropdown-item" href="javascript:;"><i class='bx bx-dollar-circle'></i><span>Earnings</span></a>
-							</li>
-							<li><a class="dropdown-item" href="javascript:;"><i class='bx bx-download'></i><span>Downloads</span></a>
-							</li>
+							
+							
+							
 							<li>
 								<div class="dropdown-divider mb-0"></div>
 							</li>
