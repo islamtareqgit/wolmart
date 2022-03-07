@@ -8,10 +8,16 @@ use Illuminate\Support\Facades\Auth;
 
 class AdminLoginController extends Controller
 {
-    
+    // show admin login form
     public function loginForm()
     {
         return view('admin.login');
+    }
+   // Admin Login  redirect
+
+    public function AdminLoginRedirect()
+    {
+        return redirect()-> route('admin.login.form');
     }
 
     // Admin login system
