@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Role;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 
 class RoleController extends Controller
@@ -35,7 +36,14 @@ class RoleController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Role::create([
+
+        'name'       => $request-> name,
+        'slug'       => Str::slug($request-> name),
+        'permission' => json_encode($request-> permission)
+
+
+        ]);
     }
 
     /**

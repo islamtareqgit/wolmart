@@ -21396,3 +21396,8 @@ aside .sp-sidebar-banner span {
             justify-content: center;
   }
 }
+
+.form-group ul li{
+
+  list-style-type: none;
+}

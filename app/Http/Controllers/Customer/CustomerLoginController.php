@@ -13,4 +13,6 @@ class CustomerLoginController extends Controller
     {
       return view('customer.login');
     }
+
+    
 }
