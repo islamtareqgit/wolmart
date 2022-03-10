@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\AdminLoginController;
 use App\Http\Controllers\Admin\AdminDashboardController;
 use App\Http\Controllers\Customer\CustomerLoginController;
 use App\Http\Controllers\Customer\CustomerDashboardController;
+use App\Http\Controllers\Customer\CustomerSignupController;
 
 
 Route::get('/', function () {
@@ -19,6 +20,10 @@ Route::post('admin/login', [AdminLoginController::class, 'AdminLoginSystem'])-> 
 Route::get('admin/logout', [AdminLoginController::class, 'AdminLogout'])-> name('admin.logout');
 Route::get('customer/dashboard', [CustomerDashboardController::class, 'customerDashboard']);
 Route::get('customer/login', [CustomerLoginController::class, 'loginFormShow']);
+Route::get('customer/signup', [CustomerSignupController::class, 'signupFormShow']);
+Route::post('customer/signup', [CustomerSignupController::class, 'create']);
+
+
 
 // Admin role CRUD
 

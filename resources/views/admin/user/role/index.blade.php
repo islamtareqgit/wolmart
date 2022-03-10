@@ -17,7 +17,9 @@
                             <th scope="col">#</th>
                             <th scope="col">Name</th>
                             <th scope="col">Slug</th>
+                            <th scope="col">Permission</th>
                             <th scope="col">Status</th>
+                            <th scope="col"></th>
                             <th scope="col">Action</th>
                         </tr>
                     </thead>
@@ -26,7 +28,9 @@
                             <th scope="row">1</th>
                             <td>Mark</td>
                             <td>Otto</td>
+                            <td>Otto</td>
                             <td>@mdo</td>
+                            <td><a href="#"></a></td>
                             <td>
                                 <a class="btn btn-info btn-sm" href="">Edit</a>
                                 <a class="btn btn-danger btn-sm" href="">Delete</a>
