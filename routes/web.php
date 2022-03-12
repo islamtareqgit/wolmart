@@ -29,6 +29,8 @@ Route::post('customer/signup', [CustomerSignupController::class, 'create']);
 
 Route::resource('role', RoleController::class);
 Route::get('all-roles', [RoleController::class, 'allRoles']);
+Route::get('del-role/{id}', [RoleController::class, 'delRoles']);
+
 
 
 

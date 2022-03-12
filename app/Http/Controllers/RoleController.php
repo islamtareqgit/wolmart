@@ -30,21 +30,29 @@ class RoleController extends Controller
         $count = 1;
         foreach($data as $role){
             
+          $per_list =  '<ul>'; 
+
+         foreach(json_decode($role-> permission)as $per){
+
+            $per_list.= '<li>' .$per. '</li>'; 
+
+         }
+        
+         $per_list.=  '</ul>';
             
-            $per = implode('|', json_decode($role-> permission));
             $list .='<tr>';
 
             $list .='<td>'. $count;  $count++.'</td>';
             $list .='<td>'. $role-> name .'</td>';
             $list .='<td>'. $role-> slug .'</td>';
-            $list .='<td>'. $per .'</td>';
+            $list .='<td>'. $per_list .'</td>';
             $list .='<td><label class="switch">
             <input type="checkbox" checked>
             <span class="slider round"></span>
           </label> </td>';
 
           $list .='<td><a class="btn btn-info btn-sm" href="">Edit</a>
-          <a class="btn btn-danger btn-sm" href="">Delete</a> </td>';
+          <a class="btn btn-danger btn-sm delete-btn" delete_id = "'.$role-> id.'"href="#">Delete</a> </td>';
 
             $list .='</tr>';
         
@@ -53,6 +61,9 @@ class RoleController extends Controller
        return $list;
         
     }
+
+
+
     /**
      * Show the form for creating a new resource.
      *
@@ -124,5 +135,15 @@ class RoleController extends Controller
     public function destroy(Role $role)
     {
         //
+    }
+
+    // Delete Roles 
+
+    public function delRoles($id)
+    {
+       
+        $delete_info = Role::find($id);
+
+        $delete_info -> delete();
     }
 }

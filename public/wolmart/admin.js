@@ -9,9 +9,10 @@ $(document).ready(function(){
         return `<p class="alert alert-${type} d-flex justify-content-between">${msg}<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></p>`;
     }
 
+    
+    // Gell all roles
     getallRoles();
-    // Show all roles
-
+    
     function getallRoles(){
 
     $.ajax({
@@ -27,6 +28,8 @@ $(document).ready(function(){
     });
 
     }
+// Role Add system
+
 
 $(document).on('submit', '#role_add_form' ,function(e){
 
@@ -47,7 +50,7 @@ contentType: false,
 processData: false,
 success: function(data){
 
-  
+  getallRoles();
   $('#role_add_form')[0].reset();
 }
 
@@ -62,6 +65,24 @@ success: function(data){
 
 });
 
+// Delete all roles
+
+$(document).on('click', '.delete-btn', function(e){
+e.preventDefault();
+let id = $(this).attr('delete_id');
+$.ajax({
+
+url: "del-role/" + id,
+success: function(){
+getallRoles();
+
+}
+
+
+});
+
+
+});
 
 });
 
