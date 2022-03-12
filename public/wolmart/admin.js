@@ -9,6 +9,25 @@ $(document).ready(function(){
         return `<p class="alert alert-${type} d-flex justify-content-between">${msg}<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></p>`;
     }
 
+    getallRoles();
+    // Show all roles
+
+    function getallRoles(){
+
+    $.ajax({
+
+    url:  "all-roles",
+    method: "GET",
+    success: function(data){
+
+     $('#role-list').html(data);
+
+    }
+
+    });
+
+    }
+
 $(document).on('submit', '#role_add_form' ,function(e){
 
 e.preventDefault();
@@ -28,7 +47,8 @@ contentType: false,
 processData: false,
 success: function(data){
 
-  console.log(data); 
+  
+  $('#role_add_form')[0].reset();
 }
 
 

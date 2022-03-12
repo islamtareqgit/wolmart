@@ -28,5 +28,7 @@ Route::post('customer/signup', [CustomerSignupController::class, 'create']);
 // Admin role CRUD
 
 Route::resource('role', RoleController::class);
+Route::get('all-roles', [RoleController::class, 'allRoles']);
+
 
 

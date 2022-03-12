@@ -88,8 +88,8 @@
                             <th scope="col">Action</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
+                    <tbody id="role-list">
+                        {{--<tr>
                             <th scope="row">1</th>
                             <td>Mark</td>
                             <td>Otto</td>
@@ -106,7 +106,7 @@
                                 <a class="btn btn-info btn-sm" href="">Edit</a>
                                 <a class="btn btn-danger btn-sm" href="">Delete</a>
                             </td>
-                        </tr>
+                        </tr>--}}
                         
                         
                     </tbody>

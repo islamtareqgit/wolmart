@@ -17,7 +17,42 @@ class RoleController extends Controller
     {
         return view('admin.user.role.index');
     }
+/**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function allRoles()
+    {
+        $data = Role::all();
 
+        $list ='';
+        $count = 1;
+        foreach($data as $role){
+            
+            
+            $per = implode('|', json_decode($role-> permission));
+            $list .='<tr>';
+
+            $list .='<td>'. $count;  $count++.'</td>';
+            $list .='<td>'. $role-> name .'</td>';
+            $list .='<td>'. $role-> slug .'</td>';
+            $list .='<td>'. $per .'</td>';
+            $list .='<td><label class="switch">
+            <input type="checkbox" checked>
+            <span class="slider round"></span>
+          </label> </td>';
+
+          $list .='<td><a class="btn btn-info btn-sm" href="">Edit</a>
+          <a class="btn btn-danger btn-sm" href="">Delete</a> </td>';
+
+            $list .='</tr>';
+        
+       }
+
+       return $list;
+        
+    }
     /**
      * Show the form for creating a new resource.
      *
