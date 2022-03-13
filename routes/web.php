@@ -18,7 +18,10 @@ Route::get('admin/login', [AdminLoginController::class, 'loginForm'])-> name('ad
 Route::get('admin', [AdminLoginController::class, 'AdminLoginRedirect']);
 Route::post('admin/login', [AdminLoginController::class, 'AdminLoginSystem'])-> name('admin.login');
 Route::get('admin/logout', [AdminLoginController::class, 'AdminLogout'])-> name('admin.logout');
-Route::get('customer/dashboard', [CustomerDashboardController::class, 'customerDashboard']);
+
+
+// Customer activity
+Route::get('customer/dashboard', [CustomerDashboardController::class, 'customerDashboard'])-> middleware('customer');
 Route::get('customer/login', [CustomerLoginController::class, 'loginFormShow']);
 Route::get('customer/signup', [CustomerSignupController::class, 'signupFormShow']);
 Route::post('customer/signup', [CustomerSignupController::class, 'create']);
