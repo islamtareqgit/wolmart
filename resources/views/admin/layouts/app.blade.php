@@ -882,6 +882,7 @@
 	<!-- Bootstrap JS -->
 
 	<script src="{{ asset('assets/js/bootstrap.bundle.min.js')}}"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 	<!--plugins-->
 

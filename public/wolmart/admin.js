@@ -70,16 +70,35 @@ success: function(data){
 $(document).on('click', '.delete-btn', function(e){
 e.preventDefault();
 let id = $(this).attr('delete_id');
-$.ajax({
-
-url: "del-role/" + id,
-success: function(){
-getallRoles();
-
-}
 
 
+swal({
+  title: "Are you sure?",
+  text: "Once deleted, you will not be able to recover this Data!",
+  icon: "warning",
+  buttons: true,
+  dangerMode: true,
+})
+.then((willDelete) => {
+  if (willDelete) {
+    $.ajax({
+
+      url: "del-role/" + id,
+      success: function(){
+      getallRoles();
+      swal('Role data deleted');
+      
+      }
+      
+      
+      });
+
+
+  } else {
+    swal("Your Data is safe!");
+  }
 });
+
 
 
 });
