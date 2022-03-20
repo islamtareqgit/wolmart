@@ -51,7 +51,7 @@
 <div class="tab-pane active in" id="sign-up">
 
     <div class="form-body">
-        <form class="row g-3" action="#" method="POST">
+        <form class="" action="#" method="POST">
             @csrf
             <div class="col-12">
                 <label for="inputEmailAddress" class="form-label">Name</label>

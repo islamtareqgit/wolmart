@@ -108,20 +108,7 @@
                             <img src="assets/images/logo.png" alt="logo" width="144" height="45" />
                         </a>
                         <form method="get" action="#" class="header-search hs-expanded hs-round d-none d-md-flex input-wrapper">
-                            <div class="select-box">
-                                <select id="category" name="category">
-                                    <option value="">All Categories</option>
-                                    <option value="4">Fashion</option>
-                                    <option value="5">Furniture</option>
-                                    <option value="6">Shoes</option>
-                                    <option value="7">Sports</option>
-                                    <option value="8">Games</option>
-                                    <option value="9">Computers</option>
-                                    <option value="10">Electronics</option>
-                                    <option value="11">Kitchen</option>
-                                    <option value="12">Clothing</option>
-                                </select>
-                            </div>
+                            
                             <input type="text" class="form-control" name="search" id="search"
                                 placeholder="Search in..." required />
                             <button class="btn btn-search" type="submit"><i class="w-icon-search"></i>
@@ -838,14 +825,34 @@
                             </ul>
                             <div class="tab-content">
                                 <div class="tab-pane active" id="sign-in">
-                                    <div class="form-group">
-                                        <label>Username or email address *</label>
-                                        <input type="text" class="form-control" name="username" id="username" required>
-                                    </div>
-                                    <div class="form-group mb-0">
-                                        <label>Password *</label>
-                                        <input type="text" class="form-control" name="password" id="password" required>
-                                    </div>
+                                    
+                                    <div class="form-body">
+										<form class="row g-3" action="{{ url('customer/login')}}" method="POST">
+											@csrf
+											<div class="col-12">
+												<label for="inputEmailAddress" class="form-label">Email Address</label>
+												<input type="email" name="email" class="form-control" id="inputEmailAddress" placeholder="Email Address">
+											</div>
+											<div class="col-12">
+												<label for="inputChoosePassword" class="form-label">Enter Password</label>
+												<div class="input-group" id="show_hide_password">
+													<input type="password" name="password" class="form-control border-end-0" id="inputChoosePassword" value="12345678" placeholder="Enter Password"> <a href="javascript:;" class="input-group-text bg-transparent"><i class='bx bx-hide'></i></a>
+												</div>
+											</div>
+											
+											
+											<div class="col-12">
+												<div class="d-grid">
+													<button type="submit" class="btn btn-primary"><i class="bx bxs-lock-open"></i>Sign in</button>
+												</div>
+											</div>
+										</form>
+									</div>
+
+                                    
+                                    
+
+
                                     <div class="form-checkbox d-flex align-items-center justify-content-between">
                                         <input type="checkbox" class="custom-checkbox" id="remember1" name="remember1" required="">
                                         <label for="remember1">Remember me</label>
@@ -853,6 +860,10 @@
                                     </div>
                                     <a href="#" class="btn btn-primary">Sign In</a>
                                 </div>
+
+
+
+
                                 <div class="tab-pane" id="sign-up">
                                     <div class="form-group">
                                         <label>Your email address *</label>

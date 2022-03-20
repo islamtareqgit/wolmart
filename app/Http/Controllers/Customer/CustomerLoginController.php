@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers\Customer;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 
 class CustomerLoginController extends Controller
 {
@@ -14,5 +15,17 @@ class CustomerLoginController extends Controller
       return view('customer.login');
     }
 
-    
+    // Customer login system
+
+
+    public function CustomerLoginSystem(Request $request)
+    {
+      if(Auth::guard('customer')-> attempt([ 'email'  => $request-> email,'password'  => $request-> password])){
+
+        return redirect()-> route('customer.dashboard');
+     }else{
+
+         return redirect()-> route('customer.login');
+     }
+    }
 }
