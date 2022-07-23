@@ -3,10 +3,12 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\Admin\AdminLoginController;
+use App\Http\Controllers\Admin\PermissionController;
 use App\Http\Controllers\Admin\AdminDashboardController;
 use App\Http\Controllers\Customer\CustomerLoginController;
-use App\Http\Controllers\Customer\CustomerDashboardController;
 use App\Http\Controllers\Customer\CustomerSignupController;
+use App\Http\Controllers\Customer\CustomerDashboardController;
+
 
 
 Route::get('/', function () {
@@ -32,10 +34,14 @@ Route::post('customer/login', [CustomerLoginController::class, 'CustomerLoginSys
 
 
 // Admin role CRUD
-
 Route::resource('role', RoleController::class);
 Route::get('all-roles', [RoleController::class, 'allRoles']);
 Route::get('del-role/{id}', [RoleController::class, 'delRoles']);
+
+
+// Admin permission CRUD
+
+Route::resource('permission', PermissionController::class);
 
 
 
