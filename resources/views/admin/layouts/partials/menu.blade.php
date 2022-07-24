@@ -55,6 +55,20 @@
                 </li>
 
             </ul>
+
+            <div class="menu-title">Users</div>
+            </a>
+            <ul>
+                <li> <a href="index.html"><i class="bx bx-right-arrow-alt"></i>All Users</a>
+                </li>
+                <li> <a href="{{ route('role.index')}}"><i class="bx bx-right-arrow-alt"></i>Role</a>
+                </li>
+                <li> <a href="{{ route('permission.index')}}"><i class="bx bx-right-arrow-alt"></i>Permissions</a>
+                </li>
+                
+
+            </ul>
+
         </li>
         
         <li>
